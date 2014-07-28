@@ -1,0 +1,145 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{029B924D-77DC-41FD-AFF7-95A656784BC3}</ProjectGuid>
+    <ProjectTypeGuids>{EFBA0AD7-5A72-4C68-AF49-83D382785DCF};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SmartTaxi.Android</RootNamespace>
+    <AssemblyName>SmartTaxi.Android</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <AndroidApplication>true</AndroidApplication>
+    <AndroidResgenFile>Resources\Resource.Designer.cs</AndroidResgenFile>
+    <GenerateSerializationAssemblies>Off</GenerateSerializationAssemblies>
+    <AndroidManifest>Properties\AndroidManifest.xml</AndroidManifest>
+    <TargetFrameworkVersion>v4.3</TargetFrameworkVersion>
+    <AndroidSupportedAbis>armeabi,armeabi-v7a,x86</AndroidSupportedAbis>
+    <AndroidStoreUncompressedFileExtensions />
+    <MandroidI18n />
+    <JavaMaximumHeapSize>1G</JavaMaximumHeapSize>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AndroidLinkMode>None</AndroidLinkMode>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AndroidUseSharedRuntime>False</AndroidUseSharedRuntime>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Mono.Android" />
+    <Reference Include="mscorlib" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Xml" />
+    <Reference Include="GooglePlayServicesLib">
+      <HintPath>..\Components\googleplayservices-18.0.0.1\lib\android\GooglePlayServicesLib.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.Android.Support.v4">
+      <HintPath>..\Components\googleplayservices-18.0.0.1\lib\android\Xamarin.Android.Support.v4.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.Android.Support.v7.AppCompat">
+      <HintPath>..\Components\googleplayservices-18.0.0.1\lib\android\Xamarin.Android.Support.v7.AppCompat.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.Android.Support.v7.MediaRouter">
+      <HintPath>..\Components\googleplayservices-18.0.0.1\lib\android\Xamarin.Android.Support.v7.MediaRouter.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Activity1.cs" />
+    <Compile Include="Resources\Resource.Designer.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="FromA.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\fonts\RobotoCondensed-Light.ttf" />
+    <None Include="Resources\AboutResources.txt" />
+    <None Include="Assets\AboutAssets.txt" />
+    <AndroidResource Include="Resources\Layout\MainMenu.axml">
+      <SubType>AndroidResource</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\Layout\FromA.axml">
+      <SubType>AndroidResource</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\Drawable\MarkerA.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\Layout\AboutDriver.axml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\Values\Strings.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\Drawable\Icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Properties\AndroidManifest.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <AndroidResource Include="Resources\Drawable\AboutDriver.png" />
+    <AndroidResource Include="Resources\Drawable\Back.png" />
+    <AndroidResource Include="Resources\Drawable\kia_sorento.jpg" />
+    <AndroidResource Include="Resources\Drawable\Phone.png" />
+    <AndroidResource Include="Resources\Drawable\RememberButton.png" />
+    <AndroidResource Include="Resources\Drawable\OkButton.png" />
+    <AndroidResource Include="Resources\Values\Styles.xml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\Drawable\custom_ratingbar.xml" />
+    <AndroidResource Include="Resources\Drawable\custom_ratingbar_filled.xml" />
+    <AndroidResource Include="Resources\Drawable\custom_ratingbar_empty.xml" />
+    <AndroidResource Include="Resources\Drawable\star_on.png" />
+    <AndroidResource Include="Resources\Drawable\star_off.png" />
+    <AndroidResource Include="Resources\Drawable\Back_copy.png" />
+    <AndroidResource Include="Resources\Drawable\remember_button.xml" />
+    <AndroidResource Include="Resources\Drawable\ok_button.xml" />
+    <AndroidResource Include="Resources\Drawable\back_button.xml" />
+    <AndroidResource Include="Resources\Drawable\star_on_new.png" />
+    <AndroidResource Include="Resources\Drawable\star_off_new.png" />
+    <AndroidResource Include="Resources\Drawable\id.png" />
+    <AndroidResource Include="Resources\Drawable\APoint.png" />
+    <AndroidResource Include="Resources\Drawable\clock.png" />
+    <AndroidResource Include="Resources\Drawable\pen.png" />
+    <AndroidResource Include="Resources\Drawable\car.png" />
+    <AndroidResource Include="Resources\Drawable\BPoint.png" />
+    <AndroidResource Include="Resources\Drawable\main_menu_animation.xml" />
+    <AndroidResource Include="Resources\anim\scale_main_menu_animation.xml" />
+    <AndroidResource Include="Resources\anim\translate_up_main_menu_animation.xml" />
+    <AndroidResource Include="Resources\anim\translate_down_main_menu_animation.xml" />
+    <AndroidResource Include="Resources\anim\drop_down_main_menu_animation.xml" />
+    <AndroidResource Include="Resources\anim\when_move_up_main_menu_animation.xml" />
+    <AndroidResource Include="Resources\anim\where_move_up_main_menu_animation.xml" />
+    <AndroidResource Include="Resources\anim\descr_move_up_main_menu_animation.xml" />
+    <AndroidResource Include="Resources\anim\call_move_up_main_menu_animation.xml" />
+    <AndroidResource Include="Resources\anim\driver_move_up_main_menu_animation.xml" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+     Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ItemGroup>
+    <XamarinComponentReference Include="googleplayservices">
+      <Version>18.0.0.1</Version>
+      <Visible>False</Visible>
+    </XamarinComponentReference>
+  </ItemGroup>
+</Project>

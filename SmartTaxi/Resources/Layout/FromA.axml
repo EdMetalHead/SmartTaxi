@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:id="@+id/FromAMainLinearLayout"
+    android:background="#ffd800">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="fill_parent"
+        android:layout_height="96.0dp"
+        android:id="@+id/FromALinearLayout"
+        android:background="#ffd800"
+        android:gravity="center_vertical">
+        <ImageView
+            android:src="@drawable/APoint"
+            android:layout_width="30.0dp"
+            android:layout_height="30.0dp"
+            android:id="@+id/imageView1"
+            android:layout_marginLeft="30.0dp"
+            android:scaleType="fitXY" />
+        <TextView
+            android:id="@+id/FromATV"
+            android:text="ОТКУДА"
+            android:textColor="#323232"
+            android:textSize="22sp"
+            android:textStyle="normal"
+            android:typeface="monospace"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="18.0dp" />
+    </LinearLayout>
+    <fragment
+        android:id="@+id/map"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        class="com.google.android.gms.maps.MapFragment" />
+</LinearLayout>
